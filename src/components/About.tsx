@@ -5,7 +5,7 @@ const About = () => {
   const skills = [
     "Python", "R", "SQL", "Tableau", "Power BI", 
     "Machine Learning", "Statistical Analysis", "Data Visualization",
-    "Customer Analytics", "Risk Modeling", "Churn Analysis"
+    "Customer Analytics", "Risk Modeling", "Churn Analysis", "User Experience"
   ];
 
   const achievements = [
@@ -78,11 +78,11 @@ const About = () => {
           </div>
 
           {/* Achievements Cards */}
-          <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 gap-6 stagger-animation">
             {achievements.map((achievement, index) => (
-              <Card key={index} className="card-professional p-6 text-center group">
+              <Card key={index} className="card-professional p-6 text-center group hover:glow-effect transition-bounce">
                 <div className="space-y-2">
-                  <div className="text-3xl font-bold text-accent group-hover:scale-110 transition-smooth">
+                  <div className="text-3xl font-bold text-accent group-hover:scale-110 transition-bounce">
                     {achievement.number}
                   </div>
                   <div className="text-xl font-semibold text-foreground">

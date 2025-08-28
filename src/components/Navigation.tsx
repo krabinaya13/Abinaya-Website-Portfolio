@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X, Download, Moon, Sun } from "lucide-react";
+import { useTheme } from "@/components/ThemeProvider";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
+  const { theme, setTheme } = useTheme();
 
   const navItems = [
     { id: "hero", label: "Home" },
@@ -73,9 +75,20 @@ const Navigation = () => {
                 </button>
               ))}
               
+              {/* Theme Toggle */}
+              <Button
+                size="sm"
+                variant="ghost"
+                onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+                className="hover-scale"
+              >
+                {theme === 'light' ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+              </Button>
+              
               <Button 
                 size="sm"
-                className="bg-accent hover:bg-accent/90 transition-smooth"
+                variant="outline"
+                className="bg-accent/10 border-accent/20 text-accent hover:bg-accent hover:text-white transition-smooth"
               >
                 <Download className="mr-2 h-4 w-4" />
                 Resume
@@ -113,7 +126,8 @@ const Navigation = () => {
               
               <Button 
                 size="sm"
-                className="w-full bg-accent hover:bg-accent/90 transition-smooth"
+                variant="outline"
+                className="w-full bg-accent/10 border-accent/20 text-accent hover:bg-accent hover:text-white transition-smooth"
               >
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume

@@ -2,13 +2,17 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, FileText, TrendingUp, Users, DollarSign, Shield } from "lucide-react";
+import customerAnalyticsImg from "@/assets/customer-analytics.jpg";
+import churnAnalysisImg from "@/assets/churn-analysis.jpg";
+import engagementInsightsImg from "@/assets/engagement-insights.jpg";
+import creditRiskImg from "@/assets/credit-risk.jpg";
 
 const Projects = () => {
   const projects = [
     {
       title: "Customer Analytics in Python",
       description: "Developed a comprehensive model using STP Framework to segment customers based on purchase behavior and Deep Learning in Python for powerful predictions about future client behavior.",
-      image: "/api/placeholder/600/400",
+      image: customerAnalyticsImg,
       icon: Users,
       color: "text-accent",
       tags: ["Python", "Deep Learning", "STP Framework", "Customer Segmentation"],
@@ -21,7 +25,7 @@ const Projects = () => {
     {
       title: "Customer Churn Analysis",
       description: "Performed churn analysis of a SaaS business and uncovered insights necessary for understanding consumer base and boosting revenue for subscription-based models.",
-      image: "/api/placeholder/600/400", 
+      image: churnAnalysisImg, 
       icon: TrendingUp,
       color: "text-success",
       tags: ["Churn Analysis", "SaaS", "Tableau", "Data Visualization"],
@@ -35,7 +39,7 @@ const Projects = () => {
     {
       title: "Customer Engagement Insights",
       description: "Conducted comprehensive customer engagement analysis ensuring users experience the best of the product or service, critical for company success and retention.",
-      image: "/api/placeholder/600/400",
+      image: engagementInsightsImg,
       icon: TrendingUp,
       color: "text-warning", 
       tags: ["Engagement Analysis", "SQL", "Tableau", "E-learning"],
@@ -49,7 +53,7 @@ const Projects = () => {
     {
       title: "Credit Risk Modeling & Default Prediction",
       description: "Built a comprehensive credit risk model using scorecards, LGD, EAD, and Expected Loss calculations to support strategic lending decisions for financial institutions.",
-      image: "/api/placeholder/600/400",
+      image: creditRiskImg,
       icon: Shield,
       color: "text-accent",
       tags: ["Risk Modeling", "Credit Scoring", "LGD", "EAD", "Financial Analytics"],
@@ -82,8 +86,18 @@ const Projects = () => {
           {projects.map((project, index) => {
             const IconComponent = project.icon;
             return (
-              <Card key={index} className="card-professional overflow-hidden group">
+              <Card key={index} className="card-professional overflow-hidden group hover:glow-effect animate-fade-in transition-smooth">
                 
+                {/* Project Image */}
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
+                </div>
+
                 {/* Project Header */}
                 <div className="p-6 pb-4">
                   <div className="flex items-start justify-between mb-4">
