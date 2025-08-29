@@ -53,10 +53,13 @@ const Navigation = () => {
             
             {/* Logo */}
             <div 
-              className="text-xl font-bold cursor-pointer hover:text-accent transition-smooth"
+              className="flex items-center gap-2 text-xl font-bold cursor-pointer hover:text-accent transition-smooth"
               onClick={() => scrollToSection("hero")}
             >
-              Abinaya K R
+              <span className="animate-pulse">🌐</span>
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Welcome to my Dataverse
+              </span>
             </div>
 
             {/* Desktop Navigation */}

@@ -215,7 +215,7 @@ const Contact = () => {
         {/* Bottom Section */}
         <div className="text-center mt-16 pt-8 border-t border-border">
           <p className="text-muted-foreground">
-            © 2024 Abinaya K R. Crafted with <span className="text-red-500">♥</span>. All Rights Reserved.
+            © 2024 Abinaya K R. Crafted with ❤️. All Rights Reserved.
           </p>
         </div>
 

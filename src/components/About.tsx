@@ -101,10 +101,11 @@ const About = () => {
         {/* Mission Statement */}
         <Card className="card-professional p-8 text-center gradient-accent">
           <blockquote className="text-xl md:text-2xl font-medium text-white leading-relaxed">
-            "Every dataset tells a story. My mission is to uncover these stories and 
-            transform them into strategic insights that drive business success."
+            "Data is the new oil. It's valuable, but if unrefined, it cannot really be used. 
+            It has to be transformed into fuel, plastic, chemicals, etc., to create a valuable 
+            entity that drives profitable activity."
           </blockquote>
-          <cite className="text-blue-100 text-lg mt-4 block">— Abinaya K R</cite>
+          <cite className="text-blue-100 text-lg mt-4 block">— Clive Humby</cite>
         </Card>
 
       </div>

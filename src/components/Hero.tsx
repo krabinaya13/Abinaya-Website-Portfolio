@@ -31,9 +31,7 @@ const Hero = () => {
             </div>
             
             <p className="text-lg text-blue-100 max-w-2xl leading-relaxed">
-              Passionate data enthusiast specializing in customer analytics, churn modeling, 
-              and risk assessment. I bridge the gap between complex data and strategic 
-              business decisions.
+              Where curiosity meets technology to create meaningful impact.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 items-center lg:items-start lg:justify-start justify-center">
