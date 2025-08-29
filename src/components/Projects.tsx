@@ -23,17 +23,16 @@ const Projects = () => {
       }
     },
     {
-      title: "Customer Churn Analysis",
-      description: "Performed churn analysis of a SaaS business and uncovered insights necessary for understanding consumer base and boosting revenue for subscription-based models.",
-      image: churnAnalysisImg, 
-      icon: TrendingUp,
-      color: "text-success",
-      tags: ["Churn Analysis", "SaaS", "Tableau", "Data Visualization"],
-      metrics: ["25% Churn Reduction", "15 Key Insights", "Real-time Dashboard"],
+      title: "Credit Risk Modeling & Default Prediction",
+      description: "Built a comprehensive credit risk model using scorecards, LGD, EAD, and Expected Loss calculations to support strategic lending decisions for financial institutions.",
+      image: creditRiskImg,
+      icon: Shield,
+      color: "text-accent",
+      tags: ["Risk Modeling", "Credit Scoring", "LGD", "EAD", "Financial Analytics"],
+      metrics: ["92% Risk Accuracy", "5 Risk Categories", "Real-time Scoring"],
       links: {
-        medium: "https://medium.com/@krabinaya13/the-science-of-retention-analyzing-customer-churn-rate-in-online-education-cbb5702953e8",
-        github: "https://github.com/krabinaya13/Portfolio/tree/main/code/Customer%20churn%20-%20raw%20data",
-        tableau: "https://public.tableau.com/app/profile/abinaya.k.r/vizzes"
+        medium: "https://medium.com/@krabinaya13/demystifying-credit-risk-modelling-a-deep-dive-into-scorecards-lgd-and-ead-models-for-loan-76dcd45a0024",
+        github: "https://github.com/krabinaya13/Credit-Risk-Model"
       }
     },
     {
@@ -51,16 +50,17 @@ const Projects = () => {
       }
     },
     {
-      title: "Credit Risk Modeling & Default Prediction",
-      description: "Built a comprehensive credit risk model using scorecards, LGD, EAD, and Expected Loss calculations to support strategic lending decisions for financial institutions.",
-      image: creditRiskImg,
-      icon: Shield,
-      color: "text-accent",
-      tags: ["Risk Modeling", "Credit Scoring", "LGD", "EAD", "Financial Analytics"],
-      metrics: ["92% Risk Accuracy", "5 Risk Categories", "Real-time Scoring"],
+      title: "Customer Churn Analysis",
+      description: "Performed churn analysis of a SaaS business and uncovered insights necessary for understanding consumer base and boosting revenue for subscription-based models.",
+      image: churnAnalysisImg, 
+      icon: TrendingUp,
+      color: "text-success",
+      tags: ["Churn Analysis", "SaaS", "Tableau", "Data Visualization"],
+      metrics: ["25% Churn Reduction", "15 Key Insights", "Real-time Dashboard"],
       links: {
-        medium: "https://medium.com/@krabinaya13/demystifying-credit-risk-modelling-a-deep-dive-into-scorecards-lgd-and-ead-models-for-loan-76dcd45a0024",
-        github: "https://github.com/krabinaya13/Credit-Risk-Model"
+        medium: "https://medium.com/@krabinaya13/the-science-of-retention-analyzing-customer-churn-rate-in-online-education-cbb5702953e8",
+        github: "https://github.com/krabinaya13/Portfolio/tree/main/code/Customer%20churn%20-%20raw%20data",
+        tableau: "https://public.tableau.com/app/profile/abinaya.k.r/vizzes"
       }
     }
   ];
