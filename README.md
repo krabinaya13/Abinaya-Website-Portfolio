@@ -1,4 +1,4 @@
-# Abinaya's Data Analytics Portfolio
+# My Data Analytics Portfolio
 
 A modern, responsive portfolio showcasing data analytics projects and expertise in machine learning, business intelligence, and statistical analysis.
 
