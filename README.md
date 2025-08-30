@@ -1,73 +1,45 @@
-# Welcome to your Lovable project
+# Abinaya's Data Analytics Portfolio
 
-## Project info
+A modern, responsive portfolio showcasing data analytics projects and expertise in machine learning, business intelligence, and statistical analysis.
 
-**URL**: https://lovable.dev/projects/1cd59e4e-c73e-40ef-8a7e-fdcb80807acd
+## About This Portfolio
 
-## How can I edit this code?
+This portfolio presents a comprehensive view of my data analytics work, featuring projects in customer analytics, credit risk modeling, engagement insights, and churn analysis. Each project demonstrates practical applications of data science methodologies and business intelligence solutions.
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+This portfolio is built with modern web technologies:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1cd59e4e-c73e-40ef-8a7e-fdcb80807acd) and start prompting.
+- **React** - Frontend framework for building interactive user interfaces
+- **TypeScript** - Type-safe JavaScript for better development experience
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework for responsive design
+- **shadcn/ui** - Modern UI component library
+- **Lucide React** - Beautiful icon library
 
-Changes made via Lovable will be committed automatically to this repo.
+## Features
 
-**Use your preferred IDE**
+- Responsive design that works on all devices
+- Dark/light theme toggle
+- Interactive project cards with detailed information
+- Skills showcase with proficiency indicators
+- Contact form for professional inquiries
+- Smooth animations and modern UI/UX
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Local Development
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+To run this portfolio locally:
 
-Follow these steps:
+```bash
+# Clone the repository
+git clone https://github.com/abinayaDA/portfolio.git
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Navigate to the project directory
+cd portfolio
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1cd59e4e-c73e-40ef-8a7e-fdcb80807acd) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
