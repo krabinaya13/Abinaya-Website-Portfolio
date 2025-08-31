@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Download, Mail, Github, Linkedin } from "lucide-react";
+import aiImage from "@/assets/abi_ai_pic.jpg";
 
 const Hero = () => {
   return (
@@ -86,7 +87,7 @@ const Hero = () => {
               <div className="absolute -inset-4 glow-effect rounded-full opacity-60"></div>
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-professional">
                 <img 
-                  src="/lovable-uploads/513dc4e0-4e19-45c7-9fbd-9f8e10b063a7.png"
+                  src={aiImage}
                   alt="Abinaya K R - Data Analyst"
                   className="w-full h-full object-cover"
                 />
