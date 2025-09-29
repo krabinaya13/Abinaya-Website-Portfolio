@@ -157,6 +157,18 @@ const Projects = () => {
                           </a>
                         </Button>
                       )}
+                      {project.links.Report && (
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className="hover-scale"
+                          asChild
+                        >
+                          <a href={project.links.Report} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="h-4 w-4" />
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                   
