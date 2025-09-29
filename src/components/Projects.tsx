@@ -2,10 +2,11 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, FileText, TrendingUp, Users, DollarSign, Shield } from "lucide-react";
-import customerAnalyticsImg from "@/assets/customer-analytics.jpg";
-import churnAnalysisImg from "@/assets/churn-analysis.jpg";
-import engagementInsightsImg from "@/assets/engagement-insights.jpg";
-import creditRiskImg from "@/assets/credit-risk.jpg";
+import customerAnalyticsImg from "@/assets/Customer-analytics.png";
+import churnAnalysisImg from "@/assets/Churn Analysis.png";
+import engagementInsightsImg from "@/assets/Engagement.png";
+import abTestingImg from "@/assets/AB testing.jpeg"; 
+import creditRiskImg from "@/assets/Credit Risk.png";
 
 const Projects = () => {
   const projects = [
@@ -62,7 +63,21 @@ const Projects = () => {
         github: "https://github.com/krabinaya13/Portfolio/tree/main/code/Customer%20churn%20-%20raw%20data",
         tableau: "https://public.tableau.com/app/profile/abinaya.k.r/vizzes"
       }
-    }
+    },
+    {
+      title: "A/B Testing Portfolio Project: E-commerce Personalization Campaign",
+      description:
+      "Executed a complete A/B testing framework testing whether personalized email offers outperform generic promotional messages. Achieved 64.9% relative improvement in conversion rates with statistical significance (p-value < 0.001) and comprehensive business impact analysis.",
+      image: abTestingImg,
+      icon: TrendingUp,
+      color: "text-pink-500", // you can change to accent, success, warning, etc.
+      tags: ["A/B Testing","Statistical Analysis","E-commerce","Python","Email Marketing","Revenue Optimization"],
+      metrics: ["23.4% Conversion Lift","18.7% Revenue Lift","64.9% Relative Improvement"],
+      links: {
+        medium:"https://medium.com/@krabinaya13/a-b-testing-the-data-driven-way-to-make-better-decisions-74be0dfacbf1",
+        github:"https://colab.research.google.com/drive/1qPnpiQeDqHKF-AHT3yaarkirOgPDeL3G#scrollTo=p7VtpTQV8FJh"
+      },
+    },
   ];
 
   return (
@@ -86,16 +101,16 @@ const Projects = () => {
           {projects.map((project, index) => {
             const IconComponent = project.icon;
             return (
-              <Card key={index} className="card-professional overflow-hidden group hover:glow-effect animate-fade-in transition-smooth">
+              <Card key={index} className="card-professional overflow-hidden group hover:shadow-2xl hover:scale-[1.02] transition-transform duration-300">
                 
                 {/* Project Image */}
                 <div className="relative overflow-hidden">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-40 object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-60 object-cover object-center transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 
                 {/* Project Header */}
