@@ -75,7 +75,8 @@ const Projects = () => {
       metrics: ["23.4% Conversion Lift","18.7% Revenue Lift","64.9% Relative Improvement"],
       links: {
         medium:"https://medium.com/@krabinaya13/a-b-testing-the-data-driven-way-to-make-better-decisions-74be0dfacbf1",
-        github:"https://colab.research.google.com/drive/1qPnpiQeDqHKF-AHT3yaarkirOgPDeL3G#scrollTo=p7VtpTQV8FJh"
+        github:"https://colab.research.google.com/drive/1qPnpiQeDqHKF-AHT3yaarkirOgPDeL3G#scrollTo=p7VtpTQV8FJh",
+        Report: "https://docs.google.com/document/d/1VBZf7VlSTvOJBwS9S1N7_pum9l6y1HsZpUkMbbbS2NQ/edit?tab=t.0#heading=h.au51mny0sx6"
       },
     },
   ];
