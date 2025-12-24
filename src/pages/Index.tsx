@@ -1,9 +1,13 @@
+// src/pages/index.tsx or src/App.tsx
+
 import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
+import { Hero } from "@/components/Hero"; 
 import About from "@/components/About";
-import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import TechnologiesShowcase from "@/components/TechnologiesShowcase";
+import CoreConceptsGrid from "@/components/CoreConceptsGrid"
+import LearningCTA from "@/components/LearningCTA";
 
 const Index = () => {
   return (
@@ -18,9 +22,17 @@ const Index = () => {
         <section id="about">
           <About />
         </section>
+
+        <section id="technologies">
+          <TechnologiesShowcase />
+        </section>
+
+        <section id="core-concepts">
+          <CoreConceptsGrid />
+        </section>
         
-        <section id="skills">
-          <Skills />
+        <section id="learning-cta">
+          <LearningCTA />
         </section>
         
         <section id="projects">
@@ -36,3 +48,5 @@ const Index = () => {
 };
 
 export default Index;
+
+import React from "react";

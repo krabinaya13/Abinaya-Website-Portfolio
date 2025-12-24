@@ -1,273 +1,238 @@
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, FileText, TrendingUp, Users, DollarSign, Shield } from "lucide-react";
+import abTestingImage from "@/assets/ab-testing-background.jpeg";
+import housePricePredictionImg from "@/assets/housePricePrediction.jpg";
 import customerAnalyticsImg from "@/assets/Customer-analytics.png";
 import churnAnalysisImg from "@/assets/Churn Analysis.png";
 import engagementInsightsImg from "@/assets/Engagement.png";
-import abTestingImg from "@/assets/AB testing.jpeg"; 
 import creditRiskImg from "@/assets/Credit Risk.png";
 
-const Projects = () => {
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+
+import {
+  Github,
+  FileText,
+  ExternalLink,
+  BarChart3,
+} from "lucide-react";
+
+export const ProjectsSection = () => {
   const projects = [
     {
       title: "Customer Analytics in Python",
-      description: "Developed a comprehensive model using STP Framework to segment customers based on purchase behavior and Deep Learning in Python for powerful predictions about future client behavior.",
+      description:
+        "Built a customer segmentation and prediction system using STP framework and deep learning to drive strategic growth decisions.",
       image: customerAnalyticsImg,
-      icon: Users,
-      color: "text-accent",
-      tags: ["Python", "Deep Learning", "STP Framework", "Customer Segmentation"],
-      metrics: ["85% Prediction Accuracy", "12 Customer Segments", "30% Revenue Increase"],
+      technologies: ["Python", "Deep Learning", "STP", "Segmentation"],
+      metrics: [
+        { label: "Accuracy", value: "85%" },
+        { label: "Segments", value: "12" },
+        { label: "Revenue Lift", value: "30%" },
+      ],
       links: {
-        medium: "https://medium.com/@krabinaya13/unlocking-growth-the-power-of-customer-analytics-with-the-stp-framework-8e12f1679d81",
-        github: "https://github.com/krabinaya13/Customer-Analytics-in-Python"
-      }
+        medium:
+          "https://medium.com/@krabinaya13/unlocking-growth-the-power-of-customer-analytics-with-the-stp-framework-8e12f1679d81",
+        github:
+          "https://github.com/krabinaya13/Customer-Analytics-in-Python",
+      },
     },
     {
       title: "Credit Risk Modeling & Default Prediction",
-      description: "Built a comprehensive credit risk model using scorecards, LGD, EAD, and Expected Loss calculations to support strategic lending decisions for financial institutions.",
+      description:
+        "Developed credit scorecards using LGD, EAD, and Expected Loss modeling to support data-driven lending decisions.",
       image: creditRiskImg,
-      icon: Shield,
-      color: "text-accent",
-      tags: ["Risk Modeling", "Credit Scoring", "LGD", "EAD", "Financial Analytics"],
-      metrics: ["92% Risk Accuracy", "5 Risk Categories", "Real-time Scoring"],
+      technologies: ["Risk Modeling", "LGD", "EAD", "Scorecards"],
+      metrics: [
+        { label: "Model Accuracy", value: "92%" },
+        { label: "Risk Buckets", value: "5" },
+        { label: "Scoring", value: "Real-time" },
+      ],
       links: {
-        medium: "https://medium.com/@krabinaya13/demystifying-credit-risk-modelling-a-deep-dive-into-scorecards-lgd-and-ead-models-for-loan-76dcd45a0024",
-        github: "https://github.com/krabinaya13/Credit-Risk-Model"
-      }
+        medium:
+          "https://medium.com/@krabinaya13/demystifying-credit-risk-modelling-a-deep-dive-into-scorecards-lgd-and-ead-models-for-loan-76dcd45a0024",
+        github: "https://github.com/krabinaya13/Credit-Risk-Model",
+      },
+    },
+    {
+      title: "A/B Testing – E-commerce Personalization",
+      description:
+        "End-to-end A/B testing framework showing 64.9% relative conversion improvement with statistical significance.",
+      image: abTestingImage,
+      technologies: ["A/B Testing", "Statistics", "Python", "Email Marketing"],
+      metrics: [
+        { label: "Conversion Lift", value: "23.4%" },
+        { label: "Revenue Lift", value: "18.7%" },
+        { label: "Improvement", value: "64.9%" },
+      ],
+      links: {
+        medium:
+          "https://medium.com/@krabinaya13/a-b-testing-the-data-driven-way-to-make-better-decisions-74be0dfacbf1",
+        github:
+          "https://colab.research.google.com/drive/1qPnpiQeDqHKF-AHT3yaarkirOgPDeL3G",
+        document:
+          "https://docs.google.com/document/d/1VBZf7VlSTvOJBwS9S1N7_pum9l6y1HsZpUkMbbbS2NQ",
+      },
     },
     {
       title: "Customer Engagement Insights",
-      description: "Conducted comprehensive customer engagement analysis ensuring users experience the best of the product or service, critical for company success and retention.",
+      description:
+        "Analyzed user engagement patterns using SQL and Tableau to improve retention and learning outcomes.",
       image: engagementInsightsImg,
-      icon: TrendingUp,
-      color: "text-warning", 
-      tags: ["Engagement Analysis", "SQL", "Tableau", "E-learning"],
-      metrics: ["40% Engagement Boost", "8 Engagement Metrics", "Interactive Visualizations"],
+      technologies: ["SQL", "Tableau", "Engagement"],
+      metrics: [
+        { label: "Engagement Boost", value: "40%" },
+        { label: "Metrics Tracked", value: "8" },
+        { label: "Dashboards", value: "Interactive" },
+      ],
       links: {
-        medium: "https://medium.com/@krabinaya13/engaging-learners-strategies-to-keep-students-motivated-and-retained-4399ec909a36",
-        github: "https://github.com/krabinaya13/customer-engagement-analysis-with-sql-and-tableau",
-        tableau: "https://public.tableau.com/app/profile/abinaya.k.r/viz/CustomerEngagementanalysisforE-learningSubscriptionModel/EngagementMonth"
-      }
+        medium:
+          "https://medium.com/@krabinaya13/engaging-learners-strategies-to-keep-students-motivated-and-retained-4399ec909a36",
+        github:
+          "https://github.com/krabinaya13/customer-engagement-analysis-with-sql-and-tableau",
+        tableau:
+          "https://public.tableau.com/app/profile/abinaya.k.r/viz/CustomerEngagementanalysisforE-learningSubscriptionModel/EngagementMonth",
+      },
     },
     {
       title: "Customer Churn Analysis",
-      description: "Performed churn analysis of a SaaS business and uncovered insights necessary for understanding consumer base and boosting revenue for subscription-based models.",
-      image: churnAnalysisImg, 
-      icon: TrendingUp,
-      color: "text-success",
-      tags: ["Churn Analysis", "SaaS", "Tableau", "Data Visualization"],
-      metrics: ["25% Churn Reduction", "15 Key Insights", "Real-time Dashboard"],
+      description:
+        "Identified churn drivers in a SaaS business and built dashboards to support retention strategies.",
+      image: churnAnalysisImg,
+      technologies: ["Churn", "SaaS", "Tableau"],
+      metrics: [
+        { label: "Churn Reduction", value: "25%" },
+        { label: "Insights", value: "15+" },
+        { label: "Dashboard", value: "Live" },
+      ],
       links: {
-        medium: "https://medium.com/@krabinaya13/the-science-of-retention-analyzing-customer-churn-rate-in-online-education-cbb5702953e8",
-        github: "https://github.com/krabinaya13/Portfolio/tree/main/code/Customer%20churn%20-%20raw%20data",
-        tableau: "https://public.tableau.com/app/profile/abinaya.k.r/vizzes"
-      }
+        medium:
+          "https://medium.com/@krabinaya13/the-science-of-retention-analyzing-customer-churn-rate-in-online-education-cbb5702953e8",
+        github:
+          "https://github.com/krabinaya13/Portfolio/tree/main/code/Customer%20churn%20-%20raw%20data",
+      },
     },
     {
-      title: "A/B Testing Portfolio Project: E-commerce Personalization Campaign",
+      title: "House Price Prediction (Streamlit App)",
       description:
-      "Executed a complete A/B testing framework testing whether personalized email offers outperform generic promotional messages. Achieved 64.9% relative improvement in conversion rates with statistical significance (p-value < 0.001) and comprehensive business impact analysis.",
-      image: abTestingImg,
-      icon: TrendingUp,
-      color: "text-pink-500", // you can change to accent, success, warning, etc.
-      tags: ["A/B Testing","Statistical Analysis","E-commerce","Python","Email Marketing","Revenue Optimization"],
-      metrics: ["23.4% Conversion Lift","18.7% Revenue Lift","64.9% Relative Improvement"],
+        "End-to-end ML app predicting house prices using Gradient Boosting with full deployment.",
+      image: housePricePredictionImg,
+      technologies: [
+        "Gradient Boosting",
+        "Feature Engineering",
+        "Streamlit",
+      ],
+      metrics: [
+        { label: "R² Score", value: "0.89" },
+        { label: "RMSE", value: "Optimized" },
+        { label: "Deployment", value: "Live" },
+      ],
       links: {
-        medium:"https://medium.com/@krabinaya13/a-b-testing-the-data-driven-way-to-make-better-decisions-74be0dfacbf1",
-        github:"https://colab.research.google.com/drive/1qPnpiQeDqHKF-AHT3yaarkirOgPDeL3G#scrollTo=p7VtpTQV8FJh",
-        Report: "https://docs.google.com/document/d/1VBZf7VlSTvOJBwS9S1N7_pum9l6y1HsZpUkMbbbS2NQ/edit?tab=t.0#heading=h.au51mny0sx6"
+        medium:
+          "https://medium.com/@krabinaya13/how-machine-learning-predicted-house-prices-better-than-i-expected-and-what-it-means-for-business-81242199380e",
+        github:
+          "https://github.com/krabinaya13/house-price-prediction-app",
+        app:
+          "https://house-price-prediction-app-gb.streamlit.app/",
       },
     },
   ];
 
   return (
-    <section id="projects" className="py-20 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <p className="text-accent font-medium tracking-wider uppercase mb-4">Featured Work</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Data-Driven <span className="text-accent">Project Portfolio</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Every dataset tells a story. Let's dive into mine and discover how I bring data to life!
-          </p>
-          <div className="w-24 h-1 gradient-accent mx-auto rounded-full mt-6"></div>
-        </div>
-
-        {/* Projects Grid */}
+    <section id="projects" className="py-20">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {projects.map((project, index) => {
-            const IconComponent = project.icon;
-            return (
-              <Card key={index} className="card-professional overflow-hidden group hover:shadow-2xl hover:scale-[1.02] transition-transform duration-300">
-                
-                {/* Project Image */}
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-60 object-cover object-center transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          {projects.map((project, i) => (
+            <Card
+              key={i}
+              className="flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div className="h-52 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <div className="flex flex-col flex-1 p-6">
+                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+
+                <p className="text-sm text-muted-foreground mb-4">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.technologies.map((tech, idx) => (
+                    <Badge key={idx} variant="secondary">
+                      {tech}
+                    </Badge>
+                  ))}
                 </div>
 
-                {/* Project Header */}
-                <div className="p-6 pb-4">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className={`p-3 rounded-lg bg-muted group-hover:scale-110 transition-smooth ${project.color}`}>
-                      <IconComponent className="h-6 w-6" />
+                <div className="mt-auto space-y-2 text-sm">
+                  {project.metrics.map((m, idx) => (
+                    <div key={idx} className="flex gap-2">
+                      <span className="text-muted-foreground">
+                        {m.label}:
+                      </span>
+                      <span className="font-medium">{m.value}</span>
                     </div>
-                    <div className="flex gap-2">
-                      {project.links.github && (
-                        <Button
-                          size="sm"
-                          variant="ghost"
-                          className="hover-scale"
-                          asChild
-                        >
-                          <a href={project.links.github} target="_blank" rel="noopener noreferrer">
-                            <Github className="h-4 w-4" />
-                          </a>
-                        </Button>
-                      )}
-                      {project.links.medium && (
-                        <Button
-                          size="sm"
-                          variant="ghost"
-                          className="hover-scale"
-                          asChild
-                        >
-                          <a href={project.links.medium} target="_blank" rel="noopener noreferrer">
-                            <FileText className="h-4 w-4" />
-                          </a>
-                        </Button>
-                      )}
-                      {project.links.tableau && (
-                        <Button
-                          size="sm"
-                          variant="ghost"
-                          className="hover-scale"
-                          asChild
-                        >
-                          <a href={project.links.tableau} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="h-4 w-4" />
-                          </a>
-                        </Button>
-                      )}
-                      {project.links.Report && (
-                        <Button
-                          size="sm"
-                          variant="ghost"
-                          className="hover-scale"
-                          asChild
-                        >
-                          <a href={project.links.Report} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="h-4 w-4" />
-                          </a>
-                        </Button>
-                      )}
-                    </div>
-                  </div>
-                  
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-smooth">
-                    {project.title}
-                  </h3>
-                  
-                  <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
-                    {project.description}
-                  </p>
-                  
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="secondary" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
+                  ))}
                 </div>
+              </div>
 
-                {/* Project Metrics */}
-                <div className="px-6 pb-6">
-                  <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider">Key Results</h4>
-                  <div className="grid grid-cols-1 gap-2">
-                    {project.metrics.map((metric, metricIndex) => (
-                      <div key={metricIndex} className="flex items-center text-sm">
-                        <div className="w-2 h-2 rounded-full bg-accent mr-3"></div>
-                        <span className="text-muted-foreground">{metric}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              <div className="p-4 border-t flex flex-wrap gap-2">
+                {project.links.medium && (
+                  <Button size="sm" asChild className="flex-1">
+                    <a href={project.links.medium} target="_blank" rel="noreferrer">
+                      <FileText className="h-4 w-4 mr-2" />
+                      Article
+                    </a>
+                  </Button>
+                )}
 
-                {/* Project Links */}
-                <div className="px-6 pb-6 pt-2 border-t border-border">
-                  <div className="flex gap-2">
-                    {project.links.medium && (
-                      <Button size="sm" className="flex-1" asChild>
-                        <a href={project.links.medium} target="_blank" rel="noopener noreferrer">
-                          <FileText className="h-4 w-4 mr-2" />
-                          Read Article
-                        </a>
-                      </Button>
-                    )}
-                    {project.links.github && (
-                      <Button size="sm" variant="outline" className="flex-1" asChild>
-                        <a href={project.links.github} target="_blank" rel="noopener noreferrer">
-                          <Github className="h-4 w-4 mr-2" />
-                          View Code
-                        </a>
-                      </Button>
-                    )}
-                  </div>
-                </div>
+                {project.links.github && (
+                  <Button size="sm" variant="outline" asChild className="flex-1">
+                    <a href={project.links.github} target="_blank" rel="noreferrer">
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </a>
+                  </Button>
+                )}
 
-              </Card>
-            );
-          })}
+                {project.links.tableau && (
+                  <Button size="sm" variant="outline" asChild>
+                    <a href={project.links.tableau} target="_blank" rel="noreferrer">
+                      <BarChart3 className="h-4 w-4 mr-2" />
+                      Tableau
+                    </a>
+                  </Button>
+                )}
+
+                {project.links.app && (
+                  <Button size="sm" variant="outline" asChild>
+                    <a href={project.links.app} target="_blank" rel="noreferrer">
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      App
+                    </a>
+                  </Button>
+                )}
+
+                {project.links.document && (
+                  <Button size="sm" variant="outline" asChild>
+                    <a href={project.links.document} target="_blank" rel="noreferrer">
+                      <FileText className="h-4 w-4 mr-2" />
+                      Doc
+                    </a>
+                  </Button>
+                )}
+              </div>
+            </Card>
+          ))}
         </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <Card className="card-professional p-8 max-w-2xl mx-auto gradient-accent">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Interested in My Work?
-            </h3>
-            <p className="text-blue-100 mb-6">
-              Explore more of my projects and insights on my professional profiles
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10"
-                asChild
-              >
-                <a href="https://github.com/krabinaya13" target="_blank" rel="noopener noreferrer">
-                  <Github className="h-5 w-5 mr-2" />
-                  View All Projects
-                </a>
-              </Button>
-              <Button 
-                size="lg"
-                className="bg-white text-primary hover:bg-white/90"
-                asChild
-              >
-                <a href="https://medium.com/@krabinaya13" target="_blank" rel="noopener noreferrer">
-                  <FileText className="h-5 w-5 mr-2" />
-                  Read My Articles
-                </a>
-              </Button>
-            </div>
-          </Card>
-        </div>
-
       </div>
     </section>
   );
 };
 
-export default Projects;
+export default ProjectsSection;
